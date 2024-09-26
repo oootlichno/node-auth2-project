@@ -3,6 +3,7 @@ const { checkUsernameExists, validateRoleName } = require('./auth-middleware');
 const { JWT_SECRET } = require("../secrets"); // use this secret!
 const bcrypt = require('bcryptjs');
 const {findBy} = require('../users/users-model'); 
+const User = require('../users/users-model');
 const jwt = require('jsonwebtoken');
 
 
